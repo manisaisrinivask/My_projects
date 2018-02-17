@@ -1,7 +1,6 @@
 '''
-- there is a bank class with name address,zipcode
+- there is a bank class with name address,zipcode and has a private data member
 - there is a customer class too which inherits from bank class. has balance, withdraw and deposit fuctions
-    and private data menber
 - there is a joint account class which inherits from both bank and customer class which has names of both the holders
    and also all other functions
 - there is a complaint filing machine for filing complaints regarding displutes and gives an reuest number
@@ -9,11 +8,14 @@
    here
 '''
 class Bank(object):
+    __name_of_bank = "Bank of xyz"  # Private Data Member
+
 
     def __init__(self,name,address,zip):            #construcor
         self.name=name
         self.address=address
         self.zip=zip
+        print "Bank name: ", Bank.__name_of_bank  # displays school members
 
     # getters
     def getname(self):
@@ -23,7 +25,7 @@ class Bank(object):
         print self.name + " and is located at: " +self.address +" ,"+ str(self.zip)
 
 class Customer(Bank):                                    # Inheriting from bank class
-    c_count=0                                            # Private data member
+    c_count=0
     def __init__(self,name,address,zip,balance):
         Bank.__init__(self,name,address,zip)
         self.balance=balance
