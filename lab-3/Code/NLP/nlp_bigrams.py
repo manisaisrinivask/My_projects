@@ -1,8 +1,4 @@
 
-# coding: utf-8
-
-# In[27]:
-
 
 #importing libraries
 import re, collections
