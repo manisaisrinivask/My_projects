@@ -1,0 +1,2 @@
+--Click the run.py file to run the application
+--For routing in the application use routes.py
