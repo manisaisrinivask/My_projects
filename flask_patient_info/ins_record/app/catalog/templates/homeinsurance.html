@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurances</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <h2 style="color:cadetblue">Insurance Information</h2>
+        <table class="w3-table-all w3-centered">
+            <tr class="w3-red">
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+            {% for insurance in insurances %}
+                <tr class="w3-hover-green">
+                    <td>{{ insurance.id }}</td>
+                    <td>{{ insurance.name}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+</body>
+</html>
