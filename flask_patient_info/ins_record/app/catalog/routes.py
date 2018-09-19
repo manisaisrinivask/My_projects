@@ -23,3 +23,4 @@ def insurance_forward():
     insurances = Insurance.query.all()
     forward_message = "Going on....."
     return render_template('homeinsurance.html', insurances=insurances)
+

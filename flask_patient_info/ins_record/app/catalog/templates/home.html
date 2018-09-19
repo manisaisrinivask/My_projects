@@ -7,20 +7,23 @@
 </head>
 
 <body>
-    <h2 style="color:cadetblue">Patients Information</h2>
+    <h2>Patients Information</h2>
+
         <table class="w3-table-all w3-centered">
             <tr class="w3-red">
                 <th>Name</th>
                 <th>Age</th>
                 <th>Phone Number</th>
                 <th>Ssn(last 4 digits)</th>
+                <th>Insurance Id </th>
             </tr>
             {% for patient in patients %}
                 <tr class="w3-hover-green">
                     <td>{{ patient.name }}</td>
                     <td>{{ patient.age }}</td>
                     <td>{{ patient.phone_number }}</td>
-                    <td> xxx-xxx-{{ patient.ssn[:4]}}<td>
+                    <td> xxx-xxx-{{ patient.ssn[:4]}}</td>
+                    <td>{{ patient.ins_id }}</td>
                 </tr>
             {% endfor %}
         </table>

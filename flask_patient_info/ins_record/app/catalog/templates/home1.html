@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <h2>Welcome to the dashboard</h2>
+    <div class="w3-container w3-teal">
+        <h2>Welcome to the dashboard</h2>
+    </div>
+    <br>
     <form action="/forward/" method="post">
-    <button name="forwardBtn" type="submit">Patient Information</button>
+        <button name="forwardBtn" type="submit" class="w3-button w3-black">Patient Information</button>
     </form>
     <br>
     <form action="/forwardinsurance/" method="post">
-    <button name="forwardBtn" type="submit">Insurance Company</button>
+        <button name="forwardBtn" type="submit" class="w3-button w3-black">Insurance Company</button>
     </form>
+</body>
 </html>
